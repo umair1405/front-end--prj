@@ -1,0 +1,378 @@
+//THIS HTML 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Your favourite music is here</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify"> Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songslist">
+            <h1>Best of NCS - No Copyright</h1>
+            <div class="songItemcontainer">
+                <div class="songItem">
+                    <img src="covers/10.jpg" alt="1">
+                    <span>Let me love you</span>
+                    <span class="songlistplay"><span class="timestamp">03:50 <i id="0" class="fa-solid songitemplay fa-circle-play"></i>
+                        </span></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="covers/9.jpg" alt="1">
+                    <span class="songname">never-love</span>
+                    <span class="songlistplay"><span class="timestamp">03:50 <i  id="1" class="fa-solid  songitemplay fa-circle-play"></i>
+                        </span></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="covers/8.jpg" alt="1">
+                    <span class="songname">hate-what</span>
+                    <span class="songlistplay"><span class="timestamp">03:50 <i id="2" class="fa-solid  songitemplay fa-circle-play"></i>
+                        </span></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="covers/7.jpg" alt="1">
+                    <span class="songname">need-more</span>
+                    <span class="songlistplay"><span class="timestamp">03:50 <i  id = "3" class="fa-solid songitemplay fa-circle-play"></i>
+                        </span></span>
+                </div>
+
+
+                <div class="songItem">
+                    <img src="covers/6.jpg" alt="1">
+                    <span class="songname">on-bed </span>
+                    <span class="songlistplay"><span class="timestamp">03:50 <i id="4" class="fa-solid  songitemplay fa-circle-play"></i>
+                        </span></span>
+                </div>
+
+
+                <div class="songItem">
+                    <img src="covers/5.jpg" alt="1">
+                    <span class="songname">change-no</span>
+                    <span class="songlistplay"><span class="timestamp">03:50 <i id="5" class="fa-solid songitemplay fa-circle-play"></i>
+                        </span></span>
+                </div>
+
+
+                <div class="songItem">
+                    <img src="covers/4.jpg" alt="1">
+                    <span class="songname">data-ipl </span>
+                    <span class="songlistplay"><span class="timestamp">03:50 <i id="6" class="fa-solid  songitemplay fa-circle-play"></i>
+                        </span></span>
+                </div>
+
+                 <div class="songItem">
+                    <img src="covers/3.jpg" alt="1">
+                    <span class="songname">hd-film </span>
+                    <span class="songlistplay"><span class="timestamp">03:50 <i  id ="7" class="fa-solid songitemplay fa-circle-play"></i>
+                        </span></span>
+                </div>
+
+                 <div class="songItem">
+                    <img src="covers/2.jpg" alt="1">
+                    <span class="songname">npl-dark </span>
+                    <span class="songlistplay"><span class="timestamp">03:50 <i id="8" class="fa-solid songitemplay fa-circle-play"></i>
+                        </span></span>
+                </div>
+
+                 <div class="songItem">
+                    <img src="covers/1.jpg" alt="1">
+                    <span class="songname">Lgo-back </span>
+                    <span class="songlistplay"><span class="timestamp">03:50 <i id="9" class="fa-solid songitemplay fa-circle-play"></i>
+                        </span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="songbanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myprogressBar" min="0"  value="0" max="100">
+        <div class="songinfo"><img src="playing.gif" width="42px" id = 'gif'> <span id="mastersongname">Let-me-love-you</span></div>
+        <div class="icons">
+            <!-- Fontawesome icons -->
+            <i class="fa-solid fa-backward" id="previous"></i>
+            <i class="fa-solid fa-circle-play" id = "masterplay"></i>
+            <i class="fa-solid fa-forward" id = "next"></i>
+        </div>  
+    </div>
+
+    <script src="https://kit.fontawesome.com/68e284c881.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+//THIS CSS 
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
+
+
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+   
+
+}
+
+nav{
+    font-family: 'Ubuntu ', sans-serif;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type : none ;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li {
+    padding: 0  12px ;
+}
+
+.brand img {
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex ;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+
+}
+
+.container{
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    font-family: 'varela-round',sans-serif ;
+    display :flex;
+
+    margin: 23px  auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('bg.jpg');
+
+}
+
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+color: white;
+flex-direction: column;
+}
+
+.icons{
+margin-top:14px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+
+
+#myprogressBar{
+    
+    width: 80%;
+    height: 5px;
+    margin: 20px auto;
+    background: blue ;
+    border-radius: 5px;
+    appearance: white;
+    cursor: pointer;
+}
+
+
+.songItemcontainer{
+    margin-top: 70px;
+
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px  0 ;
+    border-radius: 34px;
+    justify-content:space-between ;
+    align-items: center;
+}
+
+.songItem img{
+    height: 43px;
+margin: 0 23px;
+border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i {
+    cursor: pointer;
+
+
+}
+
+.songinfo{
+    position: absolute;
+    left: 10vw;
+}
+
+.songinfo img {
+    opacity: 0;
+    transition: opacity  0.4s ease-in;
+    
+ 
+}
+
+
+
+//THIS JS 
+console.log('Welcome to spotify ')
+let songindex = 0;
+let audioElement = new Audio ('songs/1.mp3');
+let masterplay =document.getElementById('masterplay'); 
+let  myprogressBar = document.getElementById('myprogressBar');
+let  gif = document.getElementById('gif');
+let mastersongname = document.getElementById('mastersongname')
+
+let songs = [ 
+{songname: 'Let-me-love-you ' , filePath:" songs/1.mp3" , Coverpath : "covers/1.jpg" },
+{songname: 'never-love ' , filePath:" songs/2.mp3" , Coverpath : "covers/2.jpg" },
+{songname: 'hate-what ' , filePath:" songs/3.mp3" , Coverpath : "covers/3.jpg" },
+{songname: 'need-more ' , filePath:" songs/4.mp3" , Coverpath : "covers/4.jpg" },
+{songname: 'on-bed ' , filePath:" songs/5.mp3" , Coverpath : "covers/5.jpg" },
+{songname: 'change-no ' , filePath:" songs/6.mp3" , Coverpath : "covers/6.jpg" },
+{songname: 'data-ipl ' , filePath:" songs/7.mp3" , Coverpath : "covers/7.jpg" },
+{songname: 'hd-film ' , filePath:" songs/8.mp3" , Coverpath : "covers/8.jpg" },
+{songname: 'npl-dark ' , filePath:" songs/9.mp3" , Coverpath : "covers/9.jpg" },
+{songname: 'go-back ' , filePath:" songs/10.mp3" , Coverpath : "covers/10.jpg" },
+
+]
+//audioElement.play();
+
+// Handle play / pause click 
+masterplay.addEventListener('click',()=>{
+if (audioElement.paused || audioElement.currentTime <=0){
+    audioElement.play();
+    masterplay.classList.remove('fa-circle-play');
+    masterplay.classList.add('fa-circle-pause');
+    gif.style.opacity =1;
+}
+else{
+     audioElement.pause();
+    masterplay.classList.remove('fa-circle-pause') ;
+    masterplay.classList.add('fa-circle-play'); 
+    gif.style.opacity = 0 ;
+
+}
+
+})
+
+// listen  to events 
+audioElement.addEventListener('timeupdate', ()=>{
+  
+    // seek update 
+    progress =((audioElement.currentTime/audioElement.duration)*100);
+    myprogressBar.value = progress;
+
+})
+
+myprogressBar.addEventListener('change',()=> {
+    audioElement.currentTime = myprogressBar.value * audioElement.duration / 100 ; 
+}) 
+
+const makeallplay =()=> {
+    Array.from(document.getElementsByClassName('songitemplay')).forEach((element) =>{
+    element.classList.remove('fa-circle-pause');
+    element.classList.add('fa-circle-play')
+})
+}
+
+Array.from(document.getElementsByClassName('songitemplay')).forEach((element) => {
+     element.addEventListener('click' , (e) =>{
+        makeallplay()
+        e.target.classList.remove('fa-circle-play');
+        e.target.classList.add('fa-circle-pause');
+         songindex = parseInt(e.target.id);
+        audioElement.src = `songs/${songindex+1}.mp3`;
+         mastersongname.innerText = songs[songindex].songname;
+         audioElement.currentTime = 0;
+         audioElement.play();
+        gif.style.opacity =1;
+        masterplay.classList.remove('fa-circle-play');
+         masterplay.classList.add('fa-circle-pause');
+
+    })
+})
+
+document.getElementById('next').addEventListener('click', ()=>{
+  if (songindex >= 9){
+    songindex = 0 ;
+  } 
+  else{
+    songindex += 1 ;
+}
+ audioElement.src = `songs/${songindex+1}.mp3`; 
+  mastersongname.innerText = songs[songindex].songname;  
+audioElement.currentTime = 0;
+         audioElement.play();
+             gif.style.opacity =1;
+
+         masterplay.classList.remove('fa-circle-play');
+         masterplay.classList.add('fa-circle-pause');
+})
+
+
+
+
+document.getElementById('previous').addEventListener('click', ()=>{
+  if (songindex <= 0){
+    songindex = 0 ;
+  }
+  else{
+    songindex -= 1 ;
+}
+ audioElement.src = `songs/${songindex+1}.mp3`;
+ mastersongname.innerText = songs[songindex].songname;
+audioElement.currentTime = 0;
+         audioElement.play();
+             gif.style.opacity =1;
+
+         masterplay.classList.remove('fa-circle-play');
+         masterplay.classList.add('fa-circle-pause');
+})
+
